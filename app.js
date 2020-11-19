@@ -78,7 +78,7 @@ function generateMain(){
   return `<div class="startpage">
   <h1>Movie Quiz</h1>  
   <div>
-    <img src="/movie/movie-screens.jpg" alt="movie-slate" class="start-image">
+    <img src="./movie/movie-screens.jpg" alt="movie-screen" class="start-image">
   </div>
     <h3>Take this quiz to see how much you love movies.</h3>
     <div>
