@@ -97,7 +97,7 @@ function generateQuestion(){
   return `<div class="quizPage">
   <h2>QUIZ${store.questionNumber + 1}</h2>
   <div class="quiz-image">
-  <img src="/movie/${store.questions[store.questionNumber].image}" alt="${store.questions[store.questionNumber].image}">
+  <img src="./movie/${store.questions[store.questionNumber].image}" alt="${store.questions[store.questionNumber].image}">
   </div>
   <p>${store.questionNumber + 1} OF ${store.questions.length}</p>
   <p>${quiz.question}</p>
