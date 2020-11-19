@@ -92,8 +92,8 @@ function generateQuestion(){
   });
   return `<div class="quizPage">
   <h2>QUIZ${store.questionNumber + 1}</h2>
+<h4>${store.questionNumber + 1} OF ${store.questions.length}</h4>
   <img src="./movie/${store.questions[store.questionNumber].image}" alt="${store.questions[store.questionNumber].image}">
-  <h4>${store.questionNumber + 1} OF ${store.questions.length}</h4>
   <p>${quiz.question}</p>
   <form method="post" id="submit-button" class="answer=radio">
   ${answer.join("")}
