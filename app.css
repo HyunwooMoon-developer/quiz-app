@@ -86,13 +86,13 @@ button:hover{
 
 .startpage{
   margin: 40px;
-  border: 1px solid black;
+  border: 1px;
   padding: 80px 20px 20px 20px ;
 }
 
 .checkpage{
   margin: 40px;
-  border: 1px solid black;
+  border: 1px;
   padding: 200px 20px 20px 20px ;
 }
 
