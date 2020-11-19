@@ -114,7 +114,7 @@ function generateFinal(){
   return `<div class="finalPage">
   <h1>Movie Quiz Result</h1>  
   <div>
-    <img src="/movie/movie-screens.jpg" alt="movie-screen" class="start-image">
+    <img src="./movie/movie-screens.jpg" alt="movie-screen" class="start-image">
   </div>
     <h2>Good Job</h2>
     <h3>You got ${store.correct} of the ${store.questions.length}!</h3>
