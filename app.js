@@ -77,13 +77,9 @@ const store = {
 function generateMain(){
   return `<div class="startpage">
   <h1>Movie Quiz</h1>  
-  <div>
-    <img src="./movie/movie-screens.jpg" alt="movie-screen" class="start-image">
-  </div>
+    <img src="./movie/movie-screens.jpg" alt="movie-slate" class="start-image">
     <h3>Take this quiz to see how much you love movies.</h3>
-    <div>
       <button id="start-button">Click Me!!</button>
-    </div>
   </div>`;
 }
 
@@ -96,9 +92,7 @@ function generateQuestion(){
   });
   return `<div class="quizPage">
   <h2>QUIZ${store.questionNumber + 1}</h2>
-  <div class="quiz-image">
   <img src="./movie/${store.questions[store.questionNumber].image}" alt="${store.questions[store.questionNumber].image}">
-  </div>
   <p>${store.questionNumber + 1} OF ${store.questions.length}</p>
   <p>${quiz.question}</p>
   <form method="post" id="submit-button" class="answer=radio">
@@ -106,22 +100,19 @@ function generateQuestion(){
   <button type="submit">submit</button>
   </form>
   <p class="correct-qtty">correct : ${store.correct}  incorrect : ${store.incorrect}</p>
-</div>`;
+  </div>
+`;
 }
 
 
 function generateFinal(){
   return `<div class="finalPage">
   <h1>Movie Quiz Result</h1>  
-  <div>
     <img src="./movie/movie-screens.jpg" alt="movie-screen" class="start-image">
-  </div>
     <h2>Good Job</h2>
     <h3>You got ${store.correct} of the ${store.questions.length}!</h3>
     <h4>If you want to retry, press the button</h4>
-    <div>
       <button class="restart-button">Click Me!!</button>
-    </div>
 </div>`;
 }
 
@@ -132,9 +123,7 @@ function checkTheAnswer(answer){
     <h3 class="answer">You're answer is correct</h3>
     <p>${store.questions[store.questionNumber].explain}</p>
     <p class="correct-qtty">correct : ${store.correct}  incorrect : ${store.incorrect}</p>
-    <div class="next-button">
     <button id="next-button">Next</button>
-    </div>
   </div>`) ;
   }
   else{
@@ -143,9 +132,7 @@ function checkTheAnswer(answer){
             <h3 class="answer">You're answer is incorrect</h3>
             <p>${store.questions[store.questionNumber].explain}</p>
             <p class="correct-qtty">correct : ${store.correct}  incorrect : ${store.incorrect}</p>
-            <div class="next-button">
             <button id="next-button">Next</button>
-            </div>
           </div>`);
   }
 }
