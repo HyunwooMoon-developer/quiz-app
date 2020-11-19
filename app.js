@@ -105,8 +105,8 @@ function generateQuestion(){
   ${answer.join("")}
   <button type="submit">submit</button>
   </form>
-</div>
-<p class="correct-qtty">correct : ${store.correct}  incorrect : ${store.incorrect}</p>`;
+  <p class="correct-qtty">correct : ${store.correct}  incorrect : ${store.incorrect}</p>
+</div>`;
 }
 
 
