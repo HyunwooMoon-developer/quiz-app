@@ -89,10 +89,8 @@ form input[type="radio"]{
 }
 
 @media all and (mi-width: 800px){
-  body{
-    margin: auto;
-  }
-  img{
-    margin: auto;
+  body {
+    width: 80%;
+    margin: 0 auto;
   }
 }
