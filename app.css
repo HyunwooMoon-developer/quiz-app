@@ -11,14 +11,9 @@ body{
   background: url("movie/background-slate.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100% ;
   text-align: center;
 }
 
-main{
-  border: 3px;
-  margin: auto;
-}
 
 h1{
   color: lemonchiffon;
@@ -51,7 +46,6 @@ h3.answer{
 }
 
 h4{
-  color: lemonchiffon;
   text-align: center;
 }
 
@@ -82,12 +76,6 @@ button{
 button:hover{
   background-color: #555555;
   color: white;
-}
-
-.startpage{
-  margin: 40px;
-  border: 1px;
-  padding: 80px 20px 20px 20px ;
 }
 
 .checkpage{
